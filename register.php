@@ -30,14 +30,14 @@
 		    <div class="uk-margin">
 		        <label class="uk-form-label" for="form-stacked-email">Email</label>
 		        <div class="uk-form-controls">
-		            <input class="uk-input" id="form-stacked-text" type="email"  required="required" placeholder="email@email.com">
+		            <input class="uk-input" id="form-stacked-text" type="Email" name="email" required="required" placeholder="email@email.com">
 		        </div>
 		    </div>
 		
 			<div class="uk-margin">
 		        <label class="uk-form-label" for="form-stacked-password">Password</label>
 		        <div class="uk-form-controls">
-		            <input class="uk-input" id="form-stacked-password" type="password" required='required' placeholder="Your Password">
+		            <input class="uk-input" id="form-stacked-password" type="Password" name="password" required='required' placeholder="Your Password">
 		        </div>
 		    </div>
 
@@ -55,8 +55,8 @@
 	</div>
 
 	<?php require_once "inc/footer.php"; ?>
+		
 
-	
 
   </body>
 </html>
