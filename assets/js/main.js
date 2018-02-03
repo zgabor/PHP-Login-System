@@ -76,7 +76,7 @@ $(document).on("submit", "form.js-register", function (event) {
 	$.ajax({
 
 		type: 'POST',
-		url: (_form.hasClass('js-login') ? '/php_login_system/ajax/login.php' : '/php_login_system/ajax/register.php' ,
+		url: (_form.hasClass('js-login') ? '/php_login_system/ajax/login.php' : '/php_login_system/ajax/register.php'),
 		data: dataObj,
 		dataType: 'json',
 		async: true
@@ -87,7 +87,7 @@ $(document).on("submit", "form.js-register", function (event) {
 		if (data.redirect !== undefined) {
 			window.location = data.redirect; 
 		} else if ( data.error !== undefined) {
-			_error.text(data.error).show();
+			_error.html(data.error).show();
 		}
 
 		alert(data.name);
